@@ -13,14 +13,12 @@ h1, h2, h3, h4, h5, h6 {
     src: url(../assets/fonts/Mythology\ Of\ Egypt.otf);
 }
 
-.navbar{ 
+.nav-item{
     display: flex;
-    justify-content: space-around;
-    align-content: space-between;
-    gap: 30px;
-    padding: 40px 20px;
-    background-color: rgb(194, 246, 255);
+    justify-content: center;
+    
 }
+
 
 .hero{
     display: flex;
@@ -33,5 +31,14 @@ h1, h2, h3, h4, h5, h6 {
     color: rgb(0, 0, 0);
     font-size: x-large;
     background-image: url(../assets/img/homeHeader.png);
-    
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.subSection{
+   padding: 40px; 
+   display: flex;
+   flex-direction: column;
+   text-align: right;
+}
+
