@@ -19,6 +19,9 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
+.navbar {
+    border-radius: 20px;
+}
 
 .hero{
     display: flex;
@@ -40,5 +43,32 @@ h1, h2, h3, h4, h5, h6 {
    display: flex;
    flex-direction: column;
    text-align: right;
+   
 }
 
+.cardSection{
+    padding: 80px 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+.contactHero{
+    background-image: url(../assets/img/contactHeader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    
+}
+
+.adoptHero{
+    background-image: url(../assets/img/adoptHeader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    
+}
