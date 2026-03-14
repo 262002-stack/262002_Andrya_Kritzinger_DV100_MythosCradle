@@ -72,3 +72,80 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     
 }
+
+.section1{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.subSection button{
+    padding: 20px;
+    width: 130px; height: 80px;
+    border-radius: 20px;
+    background-color: #15d5f5;
+    color: #fff;
+}
+
+h3{
+    color: #e9ad1c;
+    font-size: medium;
+}
+
+h4{
+    color: #15d5f5;
+    font-size: medium;
+}
+
+
+.subSection{
+    display: flex;
+    justify-content: right;
+    background-color:#002d68;
+    padding: 30px;
+
+}
+
+.sectionAgain{
+    display: flex;
+    justify-content:right;
+    padding: 30px;
+
+}
+
+.section2 h2{
+    color: #30004f;
+    font-size: x-large;
+}
+
+.cardSection{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: #002d68;
+}
+
+.cardSection h2{
+    color: #fff;
+}
+
+.card{
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background:none;
+    color: #fff   
+
+}
+
+.cardSection button{
+    padding: 20px;
+    width: 130px; height: 80px;
+    border-radius: 20px;
+    background-color: #15d5f5;
+    color: #fff;
+}
+
