@@ -13,14 +13,37 @@ h1, h2, h3, h4, h5, h6 {
     src: url(../assets/fonts/Mythology\ Of\ Egypt.otf);
 }
 
-.nav-item{
+.navFlex{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: #7f7f7f;
+}
+.searchItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    height: 55%;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.navbar {
-    border-radius: 20px;
+.bar{
+    border-right: solid #000 2px;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
 }
 
 .hero{
@@ -38,13 +61,78 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
-.subSection{
+.subSection1{
    padding: 40px; 
    display: flex;
    flex-direction: column;
    text-align: right;
    
 }
+
+.subSection1{
+    display: flex;
+    justify-content: right;
+    background-color:#002d68;
+    padding: 30px;
+
+}
+
+.rightSub1{
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    color: #fff;
+    width: 40%;
+    
+}
+
+.leftSub1{
+    display: flex;
+    justify-content: left;
+}
+.subSection1 button{
+    padding: 20px;
+    width: 130px; height: 80px;
+    border-radius: 20px;
+    background-color: #15d5f5;
+    color: #fff;
+}
+
+
+.subSection2{
+    display: flex;
+    justify-content:right;
+    padding: 30px;
+
+}
+
+.leftSub2 {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: left;
+    align-content:center;
+    flex-direction: column;
+      
+}
+
+.rightSub2{
+    display: flex;
+    justify-content: right;
+    border-radius: 20px;
+}
+
+.leftSub2 h4{
+    color: #15d5f5;
+    font-size: medium;
+}
+
+.leftSub2 h2{
+    color: ;
+}
+
+
 
 .cardSection{
     padding: 80px 60px;
@@ -73,52 +161,19 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
-.section1{
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: #fff;
-}
 
-.subSection button{
-    padding: 20px;
-    width: 130px; height: 80px;
-    border-radius: 20px;
-    background-color: #15d5f5;
-    color: #fff;
-}
+
+
 
 h3{
     color: #e9ad1c;
     font-size: medium;
 }
 
-h4{
-    color: #15d5f5;
-    font-size: medium;
-}
 
 
-.subSection{
-    display: flex;
-    justify-content: right;
-    background-color:#002d68;
-    padding: 30px;
 
-}
 
-.sectionAgain{
-    display: flex;
-    justify-content:right;
-    padding: 30px;
-
-}
-
-.section2 h2{
-    color: #30004f;
-    font-size: x-large;
-}
 
 .cardSection{
     display: flex;

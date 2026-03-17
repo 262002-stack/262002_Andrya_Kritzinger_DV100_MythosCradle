@@ -14,54 +14,45 @@
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+            <head>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
 
 
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
 
+      <header>
+        <nav class="navFlex">
+          <img src="./assets/img/logo.png" alt="" height="110px" width="228px">
+
+          <div class="navFlex">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="./pages/adoption.html">Adopt</a>
+          <a class="nav-link active" aria-current="page" href="./pages/contact.html">Contact</a>
+          </div>
+
+          <div class="search">
+            <button class="searchItem"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input class="searchItem bar" type="search" placeholder="Search">
+            <button class="searchItem"><i class="fa-solid fa-basket-shopping"></i></button>
+          </div>
+        </nav>
 
 
-         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    
-    <nav class="navbar bg-body-tertiary">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="./assets/img/logo.png" alt="Logo" width="250px" height="85px">
-    </a>
-  </div>
-</nav>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link active" aria-current="page" href="../pages/adoption.html">Adopt</a>
-          <a class="nav-link active" aria-current="page" href="../pages/contact.html">Contact</a>
-        </li>
+
+      </header>
+
+
+
         
-          </a>
-          
-        </li>
+            
+
+
         
-      </ul>
-
-
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-
-
-
-        </header>
 
          <section class="hero">
             <h1>Mythos Cradle</h1>
@@ -71,30 +62,32 @@
 
         
 
-        <div class="subSection">
-            <section class="section1">
-                 <h3>BEGIN YOUR JOURNEY</h3>
+        <section class="subSection1">
+          
+
+          <div class="rightSub1">
+            <h3>BEGIN YOUR JOURNEY</h3>
             <h2>Tiny Legends Big Hearts</h2>
-                <p>Begin your journey into legend: tiny dragons,
-                shimmering pegasi, mischievous kitsune, and
-                watchful basilisks are ready to meet their families.
-                Delight in enchanted encounters, gentle care, and
-                joyful playtime. Heartwarming bonds await as these
-                legendary creatures find their forever homes.</p>
-                
-                <button>Cradle a Legend</button>
-                
-                
-           
-            </section>    
-            <img src="./assets/img/imageSlider1.png" height="450" width="500"> 
+          <p>Begin your journey into legend: tiny dragons, shimmering pegasi, mischievous kitsune, and watchful basilisks are
+            ready to meet their families. Delight in enchanted encounters, gentle care, and joyful playtime. Heartwarming bonds
+            await as these legendary creatures find their forever homes.</p>
+
+           <button>Cradle a Legend</button>
+ 
+          </div>
+
+          <div class="leftSub1">
+             <img src="./assets/img/imageSlider1.png" height="450" width="500"> 
+
+          </div>
+            
         
-        </div>
+        </section>
         
         
 
-        <div class="sectionAgain">
-          <section class="section2">
+        <section class="subSection2">
+          <div class="leftSub2">
             <h4>THE CRADLE</h4>
             <h2>A Sanctuary Where Mythical
             Creatures Find Families</h2>
@@ -104,10 +97,14 @@
             adoption is guided with care, ensuring a safe,
             ethical, and heartwarming journey for both
             creature and caretaker.</p>
-          </section>
-          <img src="./assets/img/homeImg1.png" height="450" width="500">
+          </div>
+
+
+          <div class="rightSub2">
+            <img src="./assets/img/homeImg1.png" height="450" width="500">
+          </div>
         
-        </div>
+        </section>
 
           
 
