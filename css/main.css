@@ -59,8 +59,9 @@ h7 {
     padding-top: 20px;
     width: 90%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 70px;
+    margin-right: 70px;
+    position: fixed;
 }
 .search{
     display: flex;
@@ -109,9 +110,8 @@ header{
     background-color:#002d68;
     padding: 30px;
     align-items: center;
-    height: 100vh;
-
-   
+    height: 100vh
+    
 }
 
 
@@ -120,7 +120,10 @@ header{
    
     color: #fff;
     width: 40%;
-    
+}
+
+h2, h3{
+    font-weight: 700;
 }
 
 .leftSub1{
@@ -144,6 +147,7 @@ header{
     display: flex;
     justify-content:right;
     padding: 30px;
+    background-color: #fff;
 
 }
 
@@ -153,6 +157,8 @@ header{
     justify-content: left;
     align-content:center;
     flex-direction: column;
+    width: 40%;
+    padding-top: 50px;
       
 }
 
@@ -160,6 +166,7 @@ header{
     display: flex;
     justify-content: right;
     border-radius: 20px;
+    padding-left: 300px;
 
 }
 
@@ -189,9 +196,16 @@ h3{
     background-color: rgb(255, 255, 255);
 }
 
+.card{
+    border: none;
+}
+
+.textCard{
+    display: flex;
+    flex-direction: column;
+}
 .cardSection{
     display: flex;
-    flex-direction: row;
     padding: 20px;
     background-color: #002d68;
 }
@@ -210,12 +224,19 @@ h3{
 
 }
 
+.card h3{
+    color: #fff;
+}
+
 .cardSection button{
     padding: 20px;
-    width: 130px; height: 80px;
-    border-radius: 20px;
+    border-radius: 12px;
     background-color: #15d5f5;
     color: #fff;
+    font-weight: 600;
+    font-family: 'Poppins';
+    border: none;
+
 }
 
 
@@ -231,6 +252,14 @@ h3{
     
 }
 
+.contact{
+    background-color: #fff;
+}
+
+.contactSection{
+    background-color: #fff;
+}
+
 .subLeft3{
     display: flex;
     justify-content: left;
@@ -238,6 +267,7 @@ h3{
     width: 40%;
     flex-wrap: wrap;
     padding: 20px;
+   
 }
 
 .subRight3{
@@ -316,6 +346,51 @@ h3{
 }
 
 
+
+
+
+
+
+footer{
+    background-color: #fff
+}
+
+.footerLeft{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 20px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.links p{
+    font-weight: 600;
+}
+
+.socials{
+    padding: 20px;
+}
+
+.socials p{
+    font-weight: 600;
+}
+
+.footerBottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.topFoot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 
 
