@@ -28,6 +28,7 @@ h7 {
     padding: 20px;
     border-radius: 40px;
     background-color: #ffffff85;
+    z-index: 1000;
 
 }
 
@@ -62,6 +63,7 @@ h7 {
     margin-left: 70px;
     margin-right: 70px;
     position: fixed;
+    z-index: 100000;
 }
 .search{
     display: flex;
@@ -72,7 +74,7 @@ h7 {
     border-radius: 20px;
 }
 
-header{
+#homePage {
     background-image: url(../assets/img/homeHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -341,13 +343,102 @@ h3{
     height: 50vh;
     padding: 40px;
     color: white;
-    text-align: center;
+    text-align: center; 
+    font-size:300%
     
 }
 
+#cheese{
+    font-family: "TitleFont",sans-serif;
+}
+
+.adoptHero1{
+    font-size: 300%;
+    padding-top: 200px;
+}
+
+.subAdopt1{
+    background-color: #002d68;
+    color: #fff;
+    padding: 60px;
+    
+    text-align: center;
+}
+
+#textAdopt{
+    color: #e9ad1c;
+    font-family: 'Metamorphous';
+    font-weight: 500;
+}
+
+body{
+    font-family: 'Poppins';
+    margin: 0;
+}
+
+img{
+    border-radius: 20px;
+}
+
+.counterThing{
+    background-color: #e9ad1c;
+    color: #fff;
+}
+
+.flexContainerTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10%;
+    gap: 5%;
+}
+
+.flex2Col{
+    width: 50%;
+}
+
+.blue{
+    background-color: #fff;
+    columns: white;
+}
 
 
+.rowFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 4em;
+}
 
+.stars {
+    color: #e9ad1c;
+}
+
+.flexContainerBottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-start;
+    
+}
+
+#sneeky{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #15d5f5;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Poppins';
+    border: none;
+
+}
+
+.flex2Col button{
+    padding: 20px;
+    border-radius: 12px;
+    width: ;
+}
 
 
 
@@ -383,7 +474,10 @@ footer{
 .footerBottom{
     display: flex;
     flex-direction: row;
+    justify-content:flex-end;
     justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .topFoot{
@@ -391,6 +485,8 @@ footer{
     flex-direction: row;
     justify-content: space-between;
 }
+
+
 
 
 

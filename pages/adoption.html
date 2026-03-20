@@ -14,61 +14,49 @@
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+            <head>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet">
 
-
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="../css/main.css">
     </head>
 
     <body>
 
          <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    
-    <nav class="navbar bg-body-tertiary">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="../assets/img/logo.png" alt="Logo" width="250px" height="85px">
-    </a>
-  </div>
-</nav>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+           <div class="navContainer">
+        <nav class="navFlex">
+          <img src="../assets/img/logo.png" alt=""  width="300px">
+
+          <div class="navFlex">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
           <a class="nav-link active" aria-current="page" href="#">Adopt</a>
           <a class="nav-link active" aria-current="page" href="../pages/contact.html">Contact</a>
-        </li>
-        
-          </a>
-          
-        </li>
-        
-      </ul>
+          </div>
 
-
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+          <div class="search">
+            <button class="searchItem"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input class="searchItem bar" type="search" placeholder="Search">
+            <button class="searchItem"><i class="fa-solid fa-basket-shopping"></i></button>
+          </div>
+        </nav>
+      </div>
 
 
 
         </header>
 
         <section class="adoptHero">
-            <h1>Adopt a creature</h1>
-             
+          <div class="adoptHero1">
+            <h1 id="cheese">Adopt a creature</h1>
+          </div>    
         </section>
 
-        <section>
-            <h2>Your journey with a little legend begins here.</h2>
+        <section class="subAdopt1">
+            <h2 id="textAdopt">Your journey with a little legend begins here.</h2>
             <p>Adopting a little legend doesn’t cost a thing — our focus is finding loving homes. To make their arrival extra special,
             you can choose optional starter packages made just for your creature: tiny beds, treats, toys, and more. You can even get multiple
             packages if your legend will have indoor and outdoor spaces. After you complete your application, we’ll arrange a magical meeting so you
@@ -76,106 +64,108 @@
 
         </section>
 
-        <div class="card">
-            <h3>Blue Dragon – Azuron</h3>
-            <h5>R2500-R</h5>
-            <p>Azuron is a curious little dragon with a spark of mischief in his eyes. He
-            loves exploring hidden nooks and curling up in warm spots after a playful
-            flight, leaving tiny trails of blue sparks wherever he goes. He thrives on
-            attention and gentle play, and his favorite games involve chasing floating
-            spark orbs around the room</p>
-            <button>Add to Cradle</button>
-            <p>items</p>
+        <section class="counterThing">
+          <p>Filter</p>
+          <p>|</p>
+          <p>Showing 1–16 of 32 results</p>
 
-            <img src="../assets/img/adopt1.png" height="350px" width="550px">
+          <p>Show</p>
+          <p>Sort by</p>
+        </section>
 
-        </div>
+        <section class="blue">
+            <div class="flexContainerTop">
+                <div class="flex2Col">
+                    <img src="../assets/img/adopt1.png" width="90%">
 
-        <div class="card">
-            <h3>Kitsune – Yuki</h3>
-            <h5>R4500-R</h5>
-            <p>Yuki is a mischievous yet loving fox spirit, full of curiosity and clever ideas.
-            She delights in playful tricks and quietly watching over her friends, her
-            tails swishing with contentment. Yuki especially enjoys interactive games
-            and hiding small trinkets to surprise her caretakers</p>
-            <button>Add to Cradle</button>
-            <p>items</p>
-            <img src="../assets/img/adopt2.png" height="350px" width="550px">
 
-        </div>
+                </div>
+                <div class="flex2Col">
+                    <h1>heading</h1>
 
-        <div class="card">
-            <h3>Griffin – Aurelia</h3>
-            <h5>R6500-R</h5>
-            <p>Aurelia is a proud little griffin, courageous yet gentle. She loves climbing,
-            exploring high perches, and curling up near those she trusts, always
-            watching the world with wise golden eyes. She adores gentle games of
-            chase and loves to show off her tiny but majestic wings.</p>
-            <button>Add to Cradle</button>
-            <p>items</p>
-            <img src="../assets/img/adopt3.png" height="350px" width="550px">
+                <div class="rowFlex">
+                    <p>price</p>
+                    <p><s>price with line</s></p>
+                </div>
 
-        </div>
+                <div class="rowFlex">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    
+                    <p>|</p>
+                    <p>Category</p>
 
-        <div class="card">
-            <h3>Water Wisp – Lumina</h3>
-            <h5>R40000-R</h5>
-            <p>Lumina drifts like a shimmer of moonlight, soft and gentle. Playful and
-            curious, she glides through her surroundings, bringing calm and quiet
-            magic wherever she goes. She loves to follow gentle ripples in water or
-            light games, leaving a faint glowing trail that enchants everyone nearby.</p>
-            <button>Add to Cradle</button>
-            <p>items</p>
-            <img src="../assets/img/adopt4.png" height="350px" width="550px">
+                </div>
 
-        </div>
+                    <p>longer paragraph with desc</p>
 
-        <div class="card">
-            <h3>Pegasus – Starwind</h3>
-            <h5>R5000-R</h5>
-            <p>Starwind is a gentle, curious Pegasus foal with a playful spirit. He loves
-            short flights and sunny naps, his gleaming wings always ready for
-            discovery. He enjoys small games of chase and nuzzles to show affection,
-            quickly forming strong bonds with those he trusts.</p>
-            <button>Add to Cradle</button>
-            <p>items</p>
-            <img src="../assets/img/adopt5.png" height="350px" width="550px">
+                    
+                    <button>-<input type="number">+</button>
+                    
+                   
+                    
+                    <button id="sneeky">Add to Cradle</button>
 
-        </div>
+                    <hr>
 
-        <div class="card">
-            <h3>Forest Spirit – Briar</h3>
-            <h5>R3500-R</h5>
-            <p>Briar is a tiny guardian of the woods, curious, gentle, and full of life. He
-            loves leafy hideaways and quietly exploring gardens, always humming
-            with a touch of magic. He enjoys collecting small natural treasures and
-            bringing them to his caretakers as gifts, showing his playful personality</p>
-            <button>Add to Cradle</button>
-            <p>items</p>
-            <img src="../assets/img/adopt6.png" height="350px" width="550px">
+            <div class="flexContainerBottom">
+              <p>Bed   :Cozy lava-foam bed</p>
+              <p>Treats  :Frostberry treats</p>
+              <p>Toys  :Flame-safe balls, Wing-wrangling hoops, Tiny treasure chests</p>
+              <p> Unique Item  :Mini Fire Orb</p>
 
-        </div>
+            </div>
 
+                </div>
+                
+
+
+
+
+            </div>
+
+
+        </section>
 
 
 
 
         <footer>
-            <div class="footerLeft">
+          <div class="topFoot">
+             <div class="footerLeft">
+              <img src="../assets/img/logo.png" width="280px">
               <p>Where every legendary creature
               finds a loving home.</p>
-              
-              
+            </div>
+            
+            <div class="links">
               <p>Company</p>
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
           <a class="nav-link active" aria-current="page" href="../pages/adoption.html">Adopt</a>
           <a class="nav-link active" aria-current="page" href="../pages/contact.html">Contact</a>
-          <p>All Rights Reserved @ Open Window 2024</p>
-
             </div>
-            <div class="footerRight">
-                <a href="pages/privacy.html">Privacy & Policy</a>
-                <a href="pages/terms.html">Terms & Conditions</a>
+
+            <div class="socials">
+              <p>Social Media Links</p>
+              <img src="../assets/img/sm1.png" width="60px">
+              <img src="../assets/img/sm2.png" width="60px">
+              <img src="../assets/img/sm3.png" width="60px">
+              <img src="../assets/img/sm4.png" width="60px">
+            </div>
+          </div>
+           
+
+            <hr>
+              
+            <div class="footerBottom">
+              <div class="moreMoreLeft">
+                <p>All Rights Reserved @ Open Window 2024</p>
+              </div>
+                <a href="pages/privacy.html">Privacy & Policy    Terms & Conditions</a>
+                            
             </div>
 
         </footer>
