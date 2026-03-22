@@ -243,6 +243,10 @@ h3{
 
 
 
+
+
+
+
 .contactHero{
     background-image: url(../assets/img/contactHeader.png);
     background-repeat: no-repeat;
@@ -254,6 +258,14 @@ h3{
     
 }
 
+#frank{
+    padding-top: 130px;
+    font-family: "TitleFont",sans-serif;
+    font-size: 120px;
+}
+
+
+
 .contact{
     background-color: #fff;
 }
@@ -262,23 +274,51 @@ h3{
     background-color: #fff;
 }
 
-.subLeft3{
+.contact{
     display: flex;
-    justify-content: left;
-    flex-direction: column;
-    width: 40%;
-    flex-wrap: wrap;
-    padding: 20px;
-   
+    justify-content:right;
+    padding: 30px;
+    padding-top: 50px;
+    background-color: #fff;
+
 }
 
-.subRight3{
+.subLeft3 {
+    display: flex;
+    align-content:center;
+    flex-direction: column;
+    width: 60%;
+    padding-top: 50px;
+      
+}
+
+.subRight3 {
     display: flex;
     justify-content: right;
-    align-content: center;
-    justify-items: flex-start;
-    padding: 20px;
+    border-radius: 20px;
+    padding-left: 30px;
+    
 }
+
+#stinky{
+    color: #15d5f5;
+    font-weight: 600;
+}
+
+#crusty{
+    color:#002d68;
+    font-weight: 800;
+}
+
+.conLeft{
+    width: 50%;
+    
+}  
+
+#map{
+    border-radius: 20px;
+}
+
 
 .contactSection{
     padding: 60px 40px;
@@ -336,6 +376,14 @@ h3{
 }
 
 
+
+
+
+
+
+
+
+
 .adoptHero{
     background-image: url(../assets/img/adoptHeader.png);
     background-repeat: no-repeat;
@@ -350,6 +398,7 @@ h3{
 
 #cheese{
     font-family: "TitleFont",sans-serif;
+    font-size: 90px;
 }
 
 .adoptHero1{
@@ -383,7 +432,60 @@ img{
 .counterThing{
     background-color: #e9ad1c;
     color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    
 }
+
+
+
+.countA{
+    padding: 5px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction:row;
+    gap: 6px;
+    align-items: center;
+
+
+}
+
+.countB{
+    padding: 5px;
+    display: flex;
+    flex-direction:row;
+    gap: 30px;
+    align-items: center;
+    padding-top: 10px;
+
+
+}
+
+.countC{
+    padding: 5px;
+    display: flex;
+    flex-direction:row;
+    gap: 6px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.fish{
+    background-color: rgba(255, 255, 255, 0.556);
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+}
+
+#special{
+    width: 40px;
+
+}
+
+
 
 .flexContainerTop{
     display: flex;
@@ -391,7 +493,7 @@ img{
     justify-content: center;
     align-items: flex-start;
     padding: 10%;
-    gap: 5%;
+    gap: %;
 }
 
 .flex2Col{
@@ -403,6 +505,10 @@ img{
     columns: white;
 }
 
+.actuallyBlue{
+    background-color: #002d68;
+    color: #fff;
+}
 
 .rowFlex{
     display: flex;
@@ -419,8 +525,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: right;
-    align-items: flex-start;
-    
+    align-items: flex-start;   
 }
 
 #sneeky{
@@ -431,14 +536,61 @@ img{
     font-weight: 600;
     font-family: 'Poppins';
     border: none;
-
 }
 
-.flex2Col button{
-    padding: 20px;
+#gummy{
+    padding: px;
     border-radius: 12px;
-    width: ;
+    width: 10%;
+    border: none;
+    height: 63px;
+    background-color: #002d68;
+    color: #fff;
+
 }
+
+#yGummy{
+    padding: px;
+    border-radius: 12px;
+    width: 10%;
+    border: none;
+    height: 63px;
+    background-color:#e9ad1c;
+    color: #fff;
+
+}
+
+
+#ghost{
+    color: #999999;
+}
+
+#ghost2{
+    color: #ccc;
+}
+
+#sardine{
+    color: #15d5f5;
+}
+
+
+
+#fixed{
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  background-color:#e9ad1c;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  width: 270px;
+}
+
+
+
 
 
 
