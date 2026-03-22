@@ -11,6 +11,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h7 {
     font-family: 'Metamorphous';
+    font-size: 25px;
+    padding-right: 20px;
 }
 
 @font-face{
@@ -38,6 +40,11 @@ h7 {
     padding-top: 0;
     padding-bottom: 0;
 }
+
+.nav-link:hover{
+    color: #15d5f5;
+}
+
 .searchItem{
     display: flex;
     flex-direction: row;
@@ -88,16 +95,22 @@ h7 {
     flex-direction:column;
     justify-content:flex-end;
     align-items:end;
-    padding: 40px;
+    padding-right: 20px;
     height: 80vh;
-    text-align:right;
+    text-align:left;
     color: rgb(255, 255, 255);
     font-size:xx-large;
+    
+    
 }
 
 .hero h1{
+    display: flex;
     font-size: 300%;
     color: #e9ad1c;
+    width: 40%;
+    text-align: left;
+
 }
 
 #title{
@@ -142,6 +155,14 @@ h2, h3{
     font-family: 'Poppins';
     border: none;
 
+}
+
+.subSection1 button:hover{
+    background-color: #9311e9;
+}
+
+.cardSection button:hover{
+    background-color: #9311e9;
 }
 
 
@@ -196,20 +217,36 @@ h3{
 .cardSection{
     padding: 80px 60px;
     background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
 }
 
 .card{
     border: none;
+    display:flex;
+    flex-direction: 
 }
+
+.bigFatChud{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
 
 .textCard{
     display: flex;
     flex-direction: column;
+    justify-content:center;
+    align-items: center;   
 }
+
 .cardSection{
     display: flex;
     padding: 20px;
     background-color: #002d68;
+    
 }
 
 .cardSection h2{
@@ -238,7 +275,16 @@ h3{
     font-weight: 600;
     font-family: 'Poppins';
     border: none;
+   
+    
 
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
 }
 
 
@@ -262,6 +308,7 @@ h3{
     padding-top: 130px;
     font-family: "TitleFont",sans-serif;
     font-size: 120px;
+    padding-bottom: 60px;
 }
 
 
@@ -333,14 +380,21 @@ h3{
 
 .contactInfo, .contactForm{
     width: 40%;
-    padding: 20px;
+    padding: 40px;
 }
+
+.contactForm h1{
+    font-size:30px;
+    font-weight: 700;
+}
+
 
 .contactForm form{
     padding: 20px;
     gap: 10px;
-    background-color: #f4f4f4;
+    background-image: url(../assets/img/formBackground.png);
     border-radius: 20px;
+    color: #fff;
 }
 
 .formElement{
@@ -362,8 +416,8 @@ h3{
 .contactForm button{
     padding: 12px;
     margin-left: 10px;
-    background-color: #222;
-    color: #ccc;
+    background-color:#15d5f5;
+    color: #ffffff;
     font-family: 'poppins';
     font-weight: 400;
     border: none;
@@ -372,7 +426,7 @@ h3{
 }
 
 .contactForm button:hover{
-    background-color: #e91111;
+    background-color: #9311e9;
 }
 
 
@@ -538,6 +592,10 @@ img{
     border: none;
 }
 
+#sneeky:hover{
+    background-color: #9311e9;
+}
+
 #gummy{
     padding: px;
     border-radius: 12px;
@@ -640,6 +698,15 @@ footer{
 
 
 
+
+.hehe{
+    background-color: #ffffff;
+}
+
+.hehe button{
+    border-radius: 5px;
+    background-color: #7eb6ad;
+}
 
 
 
