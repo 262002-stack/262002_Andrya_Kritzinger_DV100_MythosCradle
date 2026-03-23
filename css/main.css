@@ -176,6 +176,8 @@ h2, h3{
     justify-content:right;
     padding: 30px;
     background-color: #fff;
+    padding-top: 90px;
+    padding-bottom: 90px;
 
 }
 
@@ -365,9 +367,12 @@ h3{
 }
 
 .conLeft{
-    width: 50%;
-    
-}  
+    width: 50%;      
+} 
+
+.socials{
+    padding-bottom: 40px;
+}
 
 #map{
     border-radius: 20px;
@@ -387,7 +392,7 @@ h3{
 
 .contactInfo, .contactForm{
     width: 40%;
-    padding: 40px;
+    gap: 30px;
 }
 
 .contactForm h1{
@@ -509,6 +514,7 @@ img{
     flex-direction:row;
     gap: 6px;
     align-items: center;
+    padding-left: 20px;
 
 
 }
@@ -520,8 +526,8 @@ img{
     gap: 30px;
     align-items: center;
     padding-top: 10px;
-
-
+    border-left: #fff;
+    border-width: 2px;
 }
 
 .countC{
@@ -724,13 +730,17 @@ footer{
 
 
 
+
+
+
 .hehe{
     background-color: #ffffff;
+    padding: 20%;
 }
 
 .hehe button{
     border-radius: 5px;
-    background-color: #7eb6ad;
+    background-color: #70b7e4;
 }
 
 
