@@ -12,12 +12,17 @@ h1, h2, h3, h4, h5, h6 {
 h7 {
     font-family: 'Metamorphous';
     font-size: 25px;
-    padding-right: 20px;
+    padding-right: 130px;
 }
 
 @font-face{
     font-family: "TitleFont";
     src: url("../assets/fonts/mythology_of_egypt/Mythology\ Of\ Egypt.otf");
+}
+
+.bigTitle{
+    display: flex;
+    
 }
 
 .navFlex{
