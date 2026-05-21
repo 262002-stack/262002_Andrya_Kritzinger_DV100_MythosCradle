@@ -91,7 +91,7 @@ h7 {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    height: 100vh;
+    height: 140vh;
 
 }
 
@@ -100,13 +100,13 @@ h7 {
     flex-direction:column;
     justify-content:flex-end;
     align-items:end;
-    padding-right: 20px;
+    /* padding-right: 20px;  */
     height: 80vh;
     text-align:left;
     color: rgb(255, 255, 255);
     font-size:xx-large;
-    
-    
+    align-content: flex-end;
+     
 }
 
 .hero h1{
@@ -151,6 +151,13 @@ h2, h3{
     justify-content: left;
     width: 40%;
 }
+
+#carouselButton{
+    background-color:#2f004f00;
+
+}
+
+
 .subSection1 button{
     padding: 20px;
     border-radius: 12px;
