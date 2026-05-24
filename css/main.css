@@ -99,13 +99,17 @@ h7 {
     display: flex;
     flex-direction:column;
     justify-content:flex-end;
-    align-items:end;
+    align-items:flex-end; 
     /* padding-right: 20px;  */
     height: 80vh;
     text-align:left;
     color: rgb(255, 255, 255);
     font-size:xx-large;
-    align-content: flex-end;
+    align-content: flex-end; 
+    display: flex;
+  min-height: 130vh;        
+  box-sizing: border-box;    /* Prevents unwanted scrolling */
+  
      
 }
 
@@ -157,6 +161,10 @@ h2, h3{
 
 }
 
+.carousel-item{
+    width: 100%;
+
+}
 
 .subSection1 button{
     padding: 20px;
