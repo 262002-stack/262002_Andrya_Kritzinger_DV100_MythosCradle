@@ -31,3 +31,26 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+///////form stuff :P
+
+let bigForm = document.getElementById("bigForm")
+let username = document.getElementById("name")
+let welcomeMessage = document.getElementById("welcomeMessage")
+
+//message
+
+let currentUsername = username.value.trim();
+displayWelcomeMessage(currentUsername);
+
+//displays message 
+let displayWelcomeMessage = (currentUsername) =>
+{
+  //crate output send with innerhtml to right place 
+  let output = `Welcome, ${currentUsername}!`;
+  welcomeMessage.innerHTML = output;
+
+};
+
+bigForm.addEventListener("submit");

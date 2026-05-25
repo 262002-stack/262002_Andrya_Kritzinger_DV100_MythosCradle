@@ -107,8 +107,8 @@ h7 {
     font-size:xx-large;
     align-content: flex-end; 
     display: flex;
-  min-height: 130vh;        
-  box-sizing: border-box;    /* Prevents unwanted scrolling */
+    min-height: 130vh;        
+    box-sizing: border-box;    
   
      
 }
@@ -247,14 +247,11 @@ h3{
 .card{
     border: none;
     display:flex;
-    flex-direction: 
 }
 
 .bigFatChud{
     display: flex;
     flex-direction: row;
-    
-
 }
 
 
@@ -299,9 +296,6 @@ h3{
     font-weight: 600;
     font-family: 'Poppins';
     border: none;
-   
-    
-
 }
 
 .button{
@@ -575,7 +569,7 @@ img{
     justify-content: center;
     align-items: flex-start;
     padding: 10%;
-    gap: %;
+    
 }
 
 .flex2Col{
@@ -737,6 +731,15 @@ footer{
 
 }
 
+.modalTest{
+    background-color: white;
+    padding: 60px;
+}
+
+#myBtn{
+    background-color: #70b7e4;
+    border-radius: 5px;
+}
 
 /* The Modal (background) */
 .modal {
@@ -758,8 +761,8 @@ footer{
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 99%; /* Could be more or less, depending on screen size */
-  height: 99%;
+  width: 100%; /* Could be more or less, depending on screen size */
+  height: 160vh;
 }
 
 /* The Close Button */
@@ -775,6 +778,58 @@ footer{
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modalText{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.labelsM{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.cartItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.creatureItem{
+    display: flex;
+    flex-direction: row;
+}
+
+.desc{
+    padding-left: 10px;
+}
+
+.bigTotal{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.order{
+    display: flex;
+    justify-content: center;
+}
+
+.order button{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #15d5f5;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Poppins';
+    border: none;
+}
+
+.order button:hover{
+    background-color: #9311e9;
 }
 
 
