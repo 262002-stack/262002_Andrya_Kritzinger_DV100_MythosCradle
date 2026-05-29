@@ -35,7 +35,7 @@ h7 {
     padding: 20px;
     border-radius: 40px;
     background-color: #ffffff85;
-    z-index: 1000;
+    z-index: 50;
 
 }
 
@@ -655,7 +655,7 @@ img{
 
 
 
-.fixed{
+#myBtn{
   position: fixed;
   bottom: 20px; 
   right: 20px; 
@@ -669,9 +669,10 @@ img{
   width: 270px;
 }
 
-.fixed:hover{
+#myBtn:hover{
     background-color: #9311e9;
 }
+
 
 
 
@@ -736,10 +737,10 @@ footer{
     padding: 60px;
 }
 
-#myBtn{
+/* #myBtn{
     background-color: #70b7e4;
     border-radius: 5px;
-}
+} */
 
 /* The Modal (background) */
 .modal {
@@ -826,10 +827,26 @@ footer{
     font-weight: 600;
     font-family: 'Poppins';
     border: none;
+    
 }
 
 .order button:hover{
     background-color: #9311e9;
+}
+
+.delete{
+    padding-right: 30px;
+    
+}
+
+.delete:hover{
+    color: rgb(158, 9, 9);
+}
+
+
+
+#thankYouModal{
+    z-index:70 ;
 }
 
 
