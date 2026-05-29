@@ -35,7 +35,7 @@ h7 {
     padding: 20px;
     border-radius: 40px;
     background-color: #ffffff85;
-    z-index: 50;
+    z-index: 5;
 
 }
 
@@ -75,7 +75,7 @@ h7 {
     margin-left: 70px;
     margin-right: 70px;
     position: fixed;
-    z-index: 100000;
+    z-index: 10;
 }
 .search{
     display: flex;
@@ -794,12 +794,16 @@ footer{
 
 
 #thankYouModal{
-    z-index:70!important;
+    z-index:;
 }
 
 
 .filter{
     border-radius: 0px;
+}
+
+.modal-backdrop{
+    z-index: 20;
 }
 
 
