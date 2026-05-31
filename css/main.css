@@ -242,12 +242,19 @@ h3{
     display: flex;
     flex-direction: column;
     padding-top: 30px;
+    justify-items:center;
+    
 }
 
 .card{
+    display: flex;
+    text-align: center;
     border: none;
-    display:flex;
+    
+    
 }
+
+
 
 .bigFatChud{
     display: flex;
@@ -734,12 +741,17 @@ footer{
 
 
 
+.modaltText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
 
 .labelsM{
     display: flex;
     justify-content: center;
-    
-    
+      
 }
 
 .cartItem{
@@ -784,11 +796,12 @@ footer{
 
 .delete{
     padding-right: 30px;
-    
+    background-color: #00000000;
+    border-color: #ff000000;  
 }
 
 .delete:hover{
-    color: rgb(158, 9, 9);
+    color: rgb(213, 16, 16);
 }
 
 
