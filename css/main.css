@@ -246,19 +246,25 @@ h3{
     
 }
 
-.card{
+.card1{
     display: flex;
     text-align: center;
     border: none;
-    
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background:none;
+    color: #fff;
+    flex-direction: column;    
     
 }
-
 
 
 .bigFatChud{
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 
@@ -281,7 +287,7 @@ h3{
     color: #fff;
 }
 
-.card{
+/* .card1{
     padding: 60px;
     display: flex;
     justify-content: center;
@@ -289,9 +295,9 @@ h3{
     background:none;
     color: #fff   
 
-}
+} */
 
-.card h3{
+.card1 h3{
     color: #fff;
 }
 

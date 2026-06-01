@@ -67,4 +67,51 @@ function welcomeMessage(event){
 
 // };
 
-// bigForm.addEventListener("submit");
+const products = [
+  {
+    name: "Azuron",
+    price: 2500,
+    id: 0,
+    quantity: 1,
+    description: "Blue Dragon",
+  },
+  {
+    name: "Yuki",
+    price: 4500,
+    id: 1,
+    quantity: 1,
+    description: "Kitsune",
+  },
+  {
+    name: "Aurelia",
+    price: 6500,
+    id: 2,
+    quantity: 1,
+    description: Griffin,
+  },
+  {
+    name: "Lumina",
+    price: 40000,
+    id: 3,
+    quantity: 1,
+    description: "Water Wisp",
+  },
+  {
+    name: "Starwind",
+    price: 5000,
+    id: 4,
+    quantity: 1,
+    description: "Pegasus",
+  },
+  {
+    name: "Brair",
+    price: 3500,
+    id: 5,
+    quantity: 1,
+    description: "Forest Spirit",
+  },
+];
+Form.addEventListener("submit");
+
+
+
