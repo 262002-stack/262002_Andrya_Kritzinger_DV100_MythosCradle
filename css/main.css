@@ -617,7 +617,7 @@ img{
     align-items: flex-start;   
 }
 
-#sneeky{
+.sneeky{
     padding: 20px;
     border-radius: 12px;
     background-color: #15d5f5;
@@ -631,7 +631,7 @@ img{
     background-color: #9311e9;
 }
 
-#gummy{
+.gummy{
     padding: px;
     border-radius: 12px;
     width: 10%;
@@ -642,7 +642,7 @@ img{
 
 }
 
-#yGummy{
+.yGummy{
     padding: px;
     border-radius: 12px;
     width: 10%;
@@ -654,15 +654,15 @@ img{
 }
 
 
-#ghost{
+.ghost{
     color: #999999;
 }
 
-#ghost2{
+.ghost2{
     color: #ccc;
 }
 
-#sardine{
+.sardine{
     color: #15d5f5;
 }
 
@@ -800,13 +800,13 @@ footer{
     background-color: #9311e9;
 }
 
-.delete{
+#deleteItem{
     padding-right: 30px;
     background-color: #00000000;
     border-color: #ff000000;  
 }
 
-.delete:hover{
+#deleteItem:hover{
     color: rgb(213, 16, 16);
 }
 

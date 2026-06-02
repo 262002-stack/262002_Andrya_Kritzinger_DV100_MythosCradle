@@ -67,6 +67,9 @@ function welcomeMessage(event){
 
 // };
 
+let cart = [];
+
+
 const products = [
   {
     name: "Azuron",
@@ -87,7 +90,7 @@ const products = [
     price: 6500,
     id: 2,
     quantity: 1,
-    description: Griffin,
+    description: "Griffin",
   },
   {
     name: "Lumina",
@@ -111,7 +114,122 @@ const products = [
     description: "Forest Spirit",
   },
 ];
-Form.addEventListener("submit");
 
+function addProductToCart(productId) {
 
+    const product = products.find(
+        product => product.id === productId
+    );
 
+    if (!product) return;
+
+    addToCart(
+        product.id,
+        product.name,
+        product.price
+    );
+}
+
+function addToCart(id, name, price) {
+
+    const existingItem = cart.find(item => item.id === id);
+
+    if (existingItem) {
+        existingItem.quantity++;
+    } else {
+        cart.push({
+            id: id,
+            name: name,
+            price: price,
+            quantity: 1
+        });
+    }
+
+    updateCart();
+    const totalItems = cart.reduce(
+    (sum, item) => sum + item.quantity,
+    0
+);
+
+document.getElementById("item-count").textContent =
+    `${totalItems} item${totalItems !== 1 ? "s" : ""}`;
+}
+
+//remove items
+function removeFromCart(id) {
+    cart = cart.filter(item => item.id !== id);
+
+    updateCart();
+}
+
+// change amount
+function increaseQuantity(id) {
+
+    const item = cart.find(item => item.id === id);
+
+    if (item) {
+        item.quantity++;
+    }
+
+    updateCart();
+}
+
+function decreaseQuantity(id) {
+
+    const item = cart.find(item => item.id === id);
+
+    if (item) {
+
+        item.quantity--;
+
+        if (item.quantity <= 0) {
+            removeFromCart(id);
+        }
+    }
+
+    updateCart();
+}
+
+//calculate total price
+function calculateTotal() {
+
+    return cart.reduce((total, item) => {
+        return total + (item.price * item.quantity);
+    }, 0);
+
+}
+
+//updating cart display
+function updateCart() {
+
+    const cartContainer =
+        document.getElementById("cartItems");
+
+    cartContainer.innerHTML = "";
+
+    cart.forEach(item => {
+
+        cartContainer.innerHTML += `
+            <div>
+                <h4>${item.name}</h4>
+
+                <button onclick="decreaseQuantity(${item.id})">-</button>
+
+                ${item.quantity}
+
+                <button onclick="increaseQuantity(${item.id})">+</button>
+
+                <span>
+                    R${item.price * item.quantity}
+                </span>
+
+                <button onclick="removeFromCart(${item.id})">
+                    Remove
+                </button>
+            </div>
+        `;
+    });
+
+    document.getElementById("cart-total").textContent =
+    calculateTotal().toLocaleString();
+}
