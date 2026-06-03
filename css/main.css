@@ -627,7 +627,7 @@ img{
     border: none;
 }
 
-#sneeky:hover{
+.sneeky:hover{
     background-color: #9311e9;
 }
 
@@ -800,13 +800,13 @@ footer{
     background-color: #9311e9;
 }
 
-#deleteItem{
+.deleteItem{
     padding-right: 30px;
     background-color: #00000000;
     border-color: #ff000000;  
 }
 
-#deleteItem:hover{
+.deleteItem:hover{
     color: rgb(213, 16, 16);
 }
 
@@ -825,6 +825,14 @@ footer{
     z-index: 20;
 }
 
+.modalPlus{
+
+border-radius: 10px;
+border-color: #00000000;
+background-color: #002d68;
+color: white;
+
+}
 
 
 

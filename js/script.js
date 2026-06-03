@@ -1,3 +1,53 @@
+let products = [
+  {
+    name: "Azuron",
+    price: 2500,
+    id: 0,
+    quantity: 1,
+    description: "Blue Dragon",
+  },
+  {
+    name: "Yuki",
+    price: 4500,
+    id: 1,
+    quantity: 1,
+    description: "Kitsune",
+  },
+  {
+    name: "Aurelia",
+    price: 6500,
+    id: 2,
+    quantity: 1,
+    description: "Griffin",
+  },
+  {
+    name: "Lumina",
+    price: 40000,
+    id: 3,
+    quantity: 1,
+    description: "Water Wisp",
+  },
+  {
+    name: "Starwind",
+    price: 5000,
+    id: 4,
+    quantity: 1,
+    description: "Pegasus",
+  },
+  {
+    name: "Brair",
+    price: 3500,
+    id: 5,
+    quantity: 1,
+    description: "Forest Spirit",
+  },
+];
+
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+
+
 // let test = () => {
 //     document.getElementById("sneeky").textContent = "Added to cart!";
 // };
@@ -67,57 +117,12 @@ function welcomeMessage(event){
 
 // };
 
-let cart = [];
 
 
-const products = [
-  {
-    name: "Azuron",
-    price: 2500,
-    id: 0,
-    quantity: 1,
-    description: "Blue Dragon",
-  },
-  {
-    name: "Yuki",
-    price: 4500,
-    id: 1,
-    quantity: 1,
-    description: "Kitsune",
-  },
-  {
-    name: "Aurelia",
-    price: 6500,
-    id: 2,
-    quantity: 1,
-    description: "Griffin",
-  },
-  {
-    name: "Lumina",
-    price: 40000,
-    id: 3,
-    quantity: 1,
-    description: "Water Wisp",
-  },
-  {
-    name: "Starwind",
-    price: 5000,
-    id: 4,
-    quantity: 1,
-    description: "Pegasus",
-  },
-  {
-    name: "Brair",
-    price: 3500,
-    id: 5,
-    quantity: 1,
-    description: "Forest Spirit",
-  },
-];
 
 function addProductToCart(productId) {
 
-    const product = products.find(
+    let product = products.find(
         product => product.id === productId
     );
 
@@ -128,6 +133,8 @@ function addProductToCart(productId) {
         product.name,
         product.price
     );
+
+    localStorage.setItem("cart", JSON.stringify(cart));
 }
 
 function addToCart(id, name, price) {
@@ -149,20 +156,23 @@ function addToCart(id, name, price) {
     const totalItems = cart.reduce(
     (sum, item) => sum + item.quantity,
     0
+    
 );
 
 document.getElementById("item-count").textContent =
     `${totalItems} item${totalItems !== 1 ? "s" : ""}`;
+    localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-//remove items
+// //remove items
 function removeFromCart(id) {
     cart = cart.filter(item => item.id !== id);
 
     updateCart();
+    localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-// change amount
+// // change amount
 function increaseQuantity(id) {
 
     const item = cart.find(item => item.id === id);
@@ -172,6 +182,7 @@ function increaseQuantity(id) {
     }
 
     updateCart();
+    localStorage.setItem("cart", JSON.stringify(cart));
 }
 
 function decreaseQuantity(id) {
@@ -188,9 +199,10 @@ function decreaseQuantity(id) {
     }
 
     updateCart();
+    localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-//calculate total price
+// //calculate total price
 function calculateTotal() {
 
     return cart.reduce((total, item) => {
@@ -199,7 +211,7 @@ function calculateTotal() {
 
 }
 
-//updating cart display
+// //updating cart display
 function updateCart() {
 
     const cartContainer =
@@ -210,20 +222,24 @@ function updateCart() {
     cart.forEach(item => {
 
         cartContainer.innerHTML += `
-            <div>
+            <div class="cartItem">
                 <h4>${item.name}</h4>
 
-                <button onclick="decreaseQuantity(${item.id})">-</button>
+                <div>
+                <button class="modalPlus" onclick="decreaseQuantity(${item.id})">-</button>
 
                 ${item.quantity}
 
-                <button onclick="increaseQuantity(${item.id})">+</button>
+                <button class="modalPlus" onclick="increaseQuantity(${item.id})">+</button>
+                </div>
+
+                
 
                 <span>
-                    R${item.price * item.quantity}
+                    <h3>R${item.price * item.quantity}</h3>
                 </span>
 
-                <button onclick="removeFromCart(${item.id})">
+                <button class="deleteItem" onclick="removeFromCart(${item.id})">
                     Remove
                 </button>
             </div>
@@ -232,4 +248,15 @@ function updateCart() {
 
     document.getElementById("cart-total").textContent =
     calculateTotal().toLocaleString();
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+
+function clearCart() {
+    cart = [];
+    updateCart();
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    document.getElementById("item-count").textContent = "0 items";
 }

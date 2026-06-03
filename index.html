@@ -39,8 +39,19 @@
 
           <div class="search">
             <button class="searchItem"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <input class="searchItem bar" type="search" placeholder="Search">
-            <button class="searchItem" data-bs-toggle="modal" data-bs-target="#cartModal"><i class="fa-solid fa-basket-shopping"></i></button>
+            <!-- <input class="searchItem bar" type="search" placeholder="Search"> -->
+            <button class="searchItem bar" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <input type="text">
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./pages/adoption.html#0">Blue Dragon</a></li>
+                <li><a class="dropdown-item" href="./pages/adoption.html#1">Kitsune</a></li>
+                <li><a class="dropdown-item" href="./pages/adoption.html#2">Griffin</a></li>
+                <li><a class="dropdown-item" href="./pages/adoption.html#3">Water Wisp</a></li>
+                <li><a class="dropdown-item" href="./pages/adoption.html#4">Pegasus</a></li>
+                <li><a class="dropdown-item" href="./pages/adoption.html#5">Forest Spirit</a></li>
+            </ul>
+            <button class="searchItem" data-bs-toggle="modal" data-bs-target="#cartModal" onclick="updateCart"><i class="fa-solid fa-basket-shopping"></i></button>
           </div>
         </nav>
       </div>
@@ -50,7 +61,7 @@
           <h7>Where legends become loved ones</h7>
         </div>
 
-          <div class="modal" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
         <div class="modal-content" > 
         <div class="modal-header">
@@ -60,7 +71,7 @@
         <div class="modal-body">
             <div class="modaltText">
               <h1>Your Cradle</h1>
-              <h3>(number) items</h3>
+              <h3 id="item-count">(number) items</h3>
            </div>
 
           <div class="labelsM">
@@ -68,28 +79,17 @@
           </div>
           <hr>
 
-          <div class="cartItem">
-              
-              <div class="creatureItem">
-                  <button class="delete"><i class="fa-solid fa-trash"></i></button>
-                  <img src="../assets/img/slider2.png" height="150px">
-                  <div class="desc">
-                      <h4>name</h4>
-                      <p>description</p>
-                  </div>
-              </div>
-
-              <p>price</p>
-              <p><input type="number" min="0"></p>
-
-              <p>Total</p>
-          </div>
-          <hr>
-
-          <div class="bigTotal">
-              <h4>Total: (number)</h4>
+          <div id="cartItems">
 
           </div>
+
+             <hr>
+
+             <div class="bigTotal">
+                <h4>Total:<span id="cart-total">0</span></h4>
+
+             </div>
+
         </div>
         <div class="order">
             <button type="button" class="btn" data-bs-dismiss="modal">Finish adoption</button>
